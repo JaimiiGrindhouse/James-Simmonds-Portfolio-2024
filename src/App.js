@@ -1,8 +1,16 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+// Import other components as needed
+
 function App() {
   return (
-    <div className="App">
-      <h1>portfolio website</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        {/* Add more routes here */}
+      </Routes>
+    </Router>
   );
 }
 
