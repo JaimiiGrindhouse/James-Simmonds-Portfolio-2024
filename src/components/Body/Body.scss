@@ -1,0 +1,94 @@
+.body {
+  display: grid;
+  margin: 2rem auto;
+  gap: 1rem;
+  // grid-template-columns: 2fr 1fr;
+  // grid-template-areas:
+  //   "main side1 side1"
+  //   "main side2 side2";
+  // align-items: stretch;
+  max-width: 80rem;
+
+  @media (min-width: 1025px) {
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas:
+      "main main main main side1 side1 side3 side3 side5 side5"
+      "main main main main side2 side2 side4 side4 . .";
+    // ". . . . side5 side5 . .";
+  }
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+      "main main main main side1 side1 side3 side3"
+      "main main main main side2 side2 side4 side4"
+      ". . . . side5 side5 . .";
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      "main main main main side1 side1"
+      "main main main main side2 side2"
+      "side3 side3 side4 side4 side5 side5";
+  }
+
+  @media (max-width: 424px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "main main"
+      "side1 side2"
+      "side3 side3"
+      "side4 side4"
+      "side5 side5";
+  }
+}
+
+.main-article {
+  height: 60vh;
+  grid-area: main; /* Main article spans main area */
+  background-color: #f0f0f0; /* Light gray background color */
+  padding: 1rem; /* Padding for content */
+  border: 1px solid #ccc; /* Border for visibility */
+}
+
+.side-article-1 {
+  grid-area: side1; /* Side article 1 spans side1 area */
+  background-color: #e0e0e0; /* Lighter background color for side articles */
+  padding: 1rem; /* Padding for content */
+  border: 1px solid #ccc; /* Border for visibility */
+}
+
+.side-article-2 {
+  grid-area: side2; /* Side article 2 spans side2 area */
+  background-color: #e0e0e0; /* Lighter background color for side articles */
+  padding: 1rem; /* Padding for content */
+  border: 1px solid #ccc; /* Border for visibility */
+}
+.side-article-3 {
+  grid-area: side3; /* Side article 1 spans side1 area */
+  background-color: #e0e0e0; /* Lighter background color for side articles */
+  padding: 1rem; /* Padding for content */
+  border: 1px solid #ccc; /* Border for visibility */
+}
+
+.side-article-4 {
+  grid-area: side4; /* Side article 2 spans side2 area */
+  background-color: #e0e0e0; /* Lighter background color for side articles */
+  padding: 1rem; /* Padding for content */
+  border: 1px solid #ccc; /* Border for visibility */
+}
+.side-article-5 {
+  grid-area: side5; /* Side article 2 spans side2 area */
+  background-color: #e0e0e0; /* Lighter background color for side articles */
+  padding: 1rem; /* Padding for content */
+  border: 1px solid #ccc; /* Border for visibility */
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .side-article-3,
+  .side-article-4,
+  .side-article-5 {
+    height: 15vh; /* Set the height to 30% of the viewport height */
+  }
+}
