@@ -1,0 +1,45 @@
+[
+  {
+    "id": "main-article",
+    "type": "main",
+    "image": "https://media.licdn.com/dms/image/D4E03AQGzqikPpi07Uw/profile-displayphoto-shrink_800_800/0/1706478198781?e=1726704000&v=beta&t=QJwEhIXiQF3m0EIzOLuyiGcyPEmmJyhWxPQWtTv8oec",
+    "title": "Sales Manager Transitions to Tech Innovator",
+    "sub-title": "Leveraging a career of sales expertise to now build user-centric applications",
+    "content": "In a remarkable career shift, former Sales Manager James Simmonds has embarked on a journey into the tech world, bringing a unique blend of sales acumen and technical skills to the forefront. With a background in leading sales teams and managing operations at companies like The Big Yellow Storage Company and Jessops Europe Ltd., James has turned his focus to full-stack software development. After earning an MSc in Computing from the University of Roehampton and completing a software development bootcamp at BrainStation, he now specializes in creating applications that solve real-world problems. Currently, James is exploring the MERN stack, honing his skills in React, Redux Toolkit, and MongoDB, with a keen interest in developing innovative e-commerce solutions."
+  },
+  {
+    "id": "side-article-1",
+    "type": "side",
+    "image": "https://media.licdn.com/dms/image/D4E03AQGzqikPpi07Uw/profile-displayphoto-shrink_800_800/0/1706478198781?e=1726704000&v=beta&t=QJwEhIXiQF3m0EIzOLuyiGcyPEmmJyhWxPQWtTv8oec",
+    "title": "Graduation Day! - Brainstation",
+    "content": "After 3 months graduation day arrives..."
+  },
+  {
+    "id": "side-article-2",
+    "type": "side",
+    "image": "path/to/image3.jpg",
+    "title": "MSc Computing 1st Class Honours",
+    "content": "Two years of study finally conclude..."
+  },
+  {
+    "id": "side-article-3",
+    "type": "side",
+    "image": "path/to/image4.jpg",
+    "title": "Side Article 3 Title",
+    "content": "Side article 3 content..."
+  },
+  {
+    "id": "side-article-4",
+    "type": "side",
+    "image": "path/to/image5.jpg",
+    "title": "Side Article 4 Title",
+    "content": "Side article 4 content..."
+  },
+  {
+    "id": "side-article-5",
+    "type": "side",
+    "image": "path/to/image6.jpg",
+    "title": "Side Article 5 Title",
+    "content": "Side article 5 content..."
+  }
+]

@@ -1,15 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import ArticleTemplate from "../ArticleTemplate/ArticleTemplate";
 import "./Body.scss";
+import articlesdata from "../../data/articles.json";
 
 function Body() {
+  const [articles, setArticles] = useState([]);
+
+  useEffect(() => {
+    setArticles(articlesdata);
+  }, []);
+
   return (
     <div className="body">
-      <div className="main-article">Main Article</div>
-      <div className="side-article-1">Side Article 1</div>
-      <div className="side-article-2">Side Article 2</div>
-      <div className="side-article-3">Side Article 3</div>
-      <div className="side-article-4">Side Article 4</div>
-      <div className="side-article-5">Side Article 5</div>
+      {articles.map((article) => (
+        <div key={article.id} className={`article ${article.id}`}>
+          <ArticleTemplate
+            image={article.image} // Pass the image URL
+            title={article.title}
+            content={article.content}
+            type={article.type} // This is used to determine the className
+          />
+        </div>
+      ))}
     </div>
   );
 }

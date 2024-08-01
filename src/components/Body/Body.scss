@@ -45,50 +45,50 @@
 }
 
 .main-article {
-  height: 60vh;
+  // height: 90vh;    Investigate how this is interacting
   grid-area: main; /* Main article spans main area */
-  background-color: #f0f0f0; /* Light gray background color */
+  background-color: white; /* Light gray background color */
   padding: 1rem; /* Padding for content */
-  border: 1px solid #ccc; /* Border for visibility */
+  border-bottom: 0.5px solid #ccc; /* Border for visibility */
 }
 
 .side-article-1 {
   grid-area: side1; /* Side article 1 spans side1 area */
-  background-color: #e0e0e0; /* Lighter background color for side articles */
+  background-color: white; /* Lighter background color for side articles */
   padding: 1rem; /* Padding for content */
-  border: 1px solid #ccc; /* Border for visibility */
+  border-bottom: 0.5px solid #ccc; /* Border for visibility */
 }
 
 .side-article-2 {
   grid-area: side2; /* Side article 2 spans side2 area */
-  background-color: #e0e0e0; /* Lighter background color for side articles */
+  background-color: white; /* Lighter background color for side articles */
   padding: 1rem; /* Padding for content */
-  border: 1px solid #ccc; /* Border for visibility */
+  border-bottom: 0.5px solid #ccc; /* Border for visibility */
 }
 .side-article-3 {
   grid-area: side3; /* Side article 1 spans side1 area */
-  background-color: #e0e0e0; /* Lighter background color for side articles */
+  background-color: white; /* Lighter background color for side articles */
   padding: 1rem; /* Padding for content */
-  border: 1px solid #ccc; /* Border for visibility */
+  border-bottom: 0.5px solid #ccc; /* Border for visibility */
 }
 
 .side-article-4 {
   grid-area: side4; /* Side article 2 spans side2 area */
-  background-color: #e0e0e0; /* Lighter background color for side articles */
+  background-color: white; /* Lighter background color for side articles */
   padding: 1rem; /* Padding for content */
-  border: 1px solid #ccc; /* Border for visibility */
+  border-bottom: 0.5px solid #ccc; /* Border for visibility */
 }
 .side-article-5 {
   grid-area: side5; /* Side article 2 spans side2 area */
-  background-color: #e0e0e0; /* Lighter background color for side articles */
+  background-color: white; /* Lighter background color for side articles */
   padding: 1rem; /* Padding for content */
-  border: 1px solid #ccc; /* Border for visibility */
+  border-bottom: 0.5px solid #ccc; /* Border for visibility */
 }
 
 @media (min-width: 425px) and (max-width: 768px) {
   .side-article-3,
   .side-article-4,
   .side-article-5 {
-    height: 15vh; /* Set the height to 30% of the viewport height */
+    height: 35vh; /* Set the height to 30% of the viewport height */
   }
 }
