@@ -1,15 +1,20 @@
 import React from "react";
 import "./TopNavBar.scss";
+import { Link } from "react-router-dom";
 
 function TopNavBar() {
   return (
     <nav className="top-navbar">
       <ul>
         <li>
-          <a href="/">Home</a>
+          <Link Link to="/home">
+            Home
+          </Link>
         </li>
         <li>
-          <a href="/about">About</a>
+          <Link Link to="/contact">
+            Contact
+          </Link>
         </li>
         <li>
           <a href="/services">Services</a>

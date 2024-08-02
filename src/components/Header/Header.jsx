@@ -1,8 +1,9 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import TopNavBar from "../TopNavBar/TopNavBar";
 import "./Header.scss";
 import Logo from "../Logo/Logo";
-import { FaReact, FaNodeJs, FaMapMarkedAlt, FaDatabase } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaMapMarkedAlt } from "react-icons/fa";
 import {
   DiJavascript1,
   DiMongodb,
@@ -12,6 +13,22 @@ import {
 } from "react-icons/di";
 
 function Header() {
+  const location = useLocation();
+
+  // Determine the logo text based on the current pathname
+  const getLogoText = () => {
+    switch (location.pathname) {
+      case "/home":
+        return "HOME";
+      case "/about":
+        return "About";
+      case "/contact":
+        return "CONTACT";
+      default:
+        return "NEWS";
+    }
+  };
+
   return (
     <>
       <div className="top-header">
@@ -58,7 +75,7 @@ function Header() {
       </div>
 
       <header className="header">
-        <div className="logo">NEWS</div>
+        <div className="logo">{getLogoText()}</div>
       </header>
       <div className="bottom-header">
         <TopNavBar />
