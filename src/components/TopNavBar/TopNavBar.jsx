@@ -17,7 +17,9 @@ function TopNavBar() {
           </Link>
         </li>
         <li>
-          <a href="/services">Services</a>
+          <Link Link to="/projects">
+            Projects
+          </Link>
         </li>
         {/* Add more navigation items */}
       </ul>

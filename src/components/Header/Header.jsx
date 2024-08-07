@@ -67,7 +67,7 @@ function Header() {
             <DiHtml5 size={30} color="#E44D26" />
             <p className="icon-text">HTML5</p>
           </div>
-          <div className="icon">
+          <div className="icon css3">
             <DiCss3 size={30} color="#264DE4" />
             <p className="icon-text">CSS3</p>
           </div>
